@@ -1,14 +1,18 @@
 /* Global Styles */
-* {
-  box-sizing: border-box;
-}
 
 body {
   background: #ffffff;
   font-family: "Poppins", sans-serif;
-  max-width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 /* Header */
 header {
   position: fixed;
@@ -110,6 +114,7 @@ header {
   width: 100%;
   padding-top: 13%;
   background: url(./images/hero-bg.png);
+  background-size: cover;
 }
 
 .hero-section .container {
@@ -203,7 +208,7 @@ header {
 .product-section {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding-top: 50px;
   text-align: center;
@@ -245,8 +250,8 @@ header {
 }
 
 .product-section button {
-  width: 245px;
-  height: 48px;
+  max-width: 245px;
+  max-height: 48px;
   background: #ffffff;
   border: 2px solid #b88e2f;
   margin-top: 6%;
@@ -261,7 +266,6 @@ header {
   box-shadow: rgba(90, 88, 88, 0.432) 0px 5px 15px;
 }
 
-/* Box Shadow on Hover */
 .product-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -305,11 +309,10 @@ header {
 /* Inspiration Section */
 .inspiration-section {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  max-width: 96%;
   height: 670px;
   margin-top: 5%;
-  gap: 20px;
+  gap: 10px;
   background: #fcf8f3;
   align-items: center;
   padding: 20px;
@@ -405,6 +408,9 @@ hr {
 }
 
 /* Footer section */
+
+
+
 footer {
   width: 100%;
   height: 505px;
@@ -630,23 +636,26 @@ text-align: center;
   }
 
   .hero-section .container {
-    width: 90%;
+    width: 80%;
     padding: 20px;
   }
 
   .product-section {
     padding-top: 20px;
   }
+
+  
 }
 
 @media (max-width: 450px) {
-   
+ 
   .logo-text {
     font-size: 24px;
   }
 
   .hero-section {
-    width: 120%;
+    width: 100%;
+    
   }
 
   .hero-section .content {
@@ -667,8 +676,16 @@ text-align: center;
     height: 50px;
     font-size: 14px;
   }
+.product-card ,
+  .browse-img img {
+    width: 90%;
+    height: 90%;
+  }
 
-  
+  .product-card img {
+    width: 100%;
+  }
+ 
   .browse-section h1,
   .product-section h1 {
     font-size: 28px;
@@ -678,4 +695,17 @@ text-align: center;
   .product-card p {
     font-size: 16px;
   }
+
+
+  .browse-section ,
+  .product-section  {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .inspiration-section .ins-img ,
+  .inner-peace {
+    width: 100%;
+  }
+  
 }

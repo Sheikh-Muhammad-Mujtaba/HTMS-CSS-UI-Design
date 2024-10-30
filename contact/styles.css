@@ -1,0 +1,371 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+}
+
+.hero-image {
+    display: flex;  
+    flex-direction: column;
+    max-width: 100%;
+    height: 70vh;
+    background-image: url('../images/contact-page.png');
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-1 {
+width: 77px;
+height: 77px;
+} 
+
+.hero-image h1 {
+font-weight: 500;
+font-size: 48px;
+line-height: 72px;
+margin: 0;
+color: #000000;
+}
+
+.form-content .content-head h1 {
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+text-align: center;
+color: #000000;
+}
+
+
+.form-content .content-head p {
+    width: 80%;
+    margin: 10px auto;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #9F9F9F;
+}
+
+.form-content .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 5%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-item .content {
+ margin-left: 30px;
+ text-align: left;
+}
+
+.info-item h2 {
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #000000;
+}
+
+
+.info-item p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    width: 450px;
+}
+
+form label {
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 18px;
+}
+
+form input {
+box-sizing: border-box;
+width: 450px;
+height: 75px;
+background: #FFFFFF;
+border: 1px solid #9F9F9F;
+border-radius: 10px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #9F9F9F;
+padding: 15px;
+margin-bottom: 35px;
+}
+
+form textarea {
+box-sizing: border-box;
+width: 450px;
+height: 120px;
+background: #FFFFFF;
+border: 1px solid #9F9F9F;
+border-radius: 10px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #9F9F9F;
+padding: 15px;
+margin-bottom: 35px;
+resize: none;
+}
+
+form button {
+box-sizing: border-box;
+width: 237px;
+height: 55px;
+background: #B88E2F;
+border: 1px solid #B88E2F;
+border-radius: 5px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+form button:hover {
+    border: 1px solid #000000;
+
+}
+
+.banner {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
+max-width: 1440px;
+height: 270px;
+background: #fcefdf;
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: row;
+}
+.banner svg {
+    width: 52.77px;
+    height: 60px;
+    margin-right: 10px ;
+}
+
+.banner h1 {
+margin: 0;
+font-weight: 600;
+font-size: 25px;
+line-height: 150%;
+color: #242424;
+}
+
+.banner p {
+    margin: 0;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: #898989;
+}
+
+
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1040px) {
+    .form-content .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 150px;
+    }
+  
+    .info {
+        flex-direction: row;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+ 
+
+    .info-item .content {
+        width: 200px;
+    }
+    .info p {
+        width: 230px;
+    }
+
+
+    form {
+      width: 100%;
+    }
+  
+    form input,
+    form textarea {
+      width: 100%;
+    }
+    .banner {
+        flex-wrap: wrap;
+    }
+
+    .banner .container {
+        width: 400px;
+    }
+  }
+  
+  /* Small screens (mobile landscape) */
+  @media (max-width: 867px) {
+    .hero-image h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  
+    .form-content .content-head h1 {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  
+    .form-content .content-head p {
+      width: 90%;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    form label,
+    form input,
+    form textarea,
+    form button {
+      font-size: 14px;
+    }
+  
+    .banner h1 {
+      font-size: 20px;
+    }
+  
+    .banner p {
+      font-size: 16px;
+    }
+  
+    .logo-1 {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .banner {
+      padding: 10px;
+      height: auto;
+      justify-content: center;
+    }
+ .banner .container {
+    width: 300px;
+ }
+    
+    .info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+    }
+
+
+.info h1 {
+    font-size: 20px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+  }
+  
+  /* Extra small screens (mobile portrait) */
+  @media (max-width: 480px) {
+    .hero-image h1 {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
+  
+    .form-content .content-head h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .form-content .content-head p {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+  .info {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-item {
+    width: 100%;
+  }
+    .info-item h2 {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    .info-item p {
+        width: 100%;
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    .info-item svg {
+        width: 7%;
+    }
+  
+    form {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .banner h1,
+    .banner p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+    .banner svg {
+      width: 40px;
+      height: 50px;
+    }
+
+    .banner .container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+  }
